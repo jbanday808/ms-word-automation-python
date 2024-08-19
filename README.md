@@ -19,8 +19,7 @@
 
 - Open Command Prompt (Windows) or Terminal (macOS/Linux).
 - Type **python --version** (or **python3 --version** on some systems) and press **Enter**.
-
-You should see the version number of Python, confirming that the installation was successful.
+- You should see the version number of Python, confirming that the installation was successful.
 
 **1.2 Install the pywin32 Library**
 
@@ -36,11 +35,11 @@ You should see the version number of Python, confirming that the installation wa
 
 **Verify the Installation**:
 
-Type the following command to confirm that the pywin32 installation is correct:
+- Type the following command to confirm that the pywin32 installation is correct:
 
 **pip show pywin32**
 
-If the installation is successful, you’ll see information about the package, including its version number and installation path on your system.
+- If the installation is successful, you’ll see information about the package, including its version number and installation path on your system.
 
 **Step 2**: **Write the Python Script**
 
