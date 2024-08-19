@@ -11,35 +11,33 @@ Go to the official Python website and download the latest version for your opera
 **Official Python Website**: https://www.python.org/downloads/
 
 Run the Python Installer:
-Double-click the installer file you downloaded.
+
+- Double-click the installer file you downloaded.
 
 **IMPORTANT**: Check the "**Add Python to PATH**" box during installation. Enabling this option allows you to run Python from the command line.
 
-Click "**Install Now**" and follow the instructions to complete the installation.
+- Click "**Install Now**" and follow the instructions to complete the installation.
 
 **Verify the Installation**:
 
-Open Command Prompt (Windows) or Terminal (macOS/Linux).
-
-Type **python --version** (or **python3 --version** on some systems) and press **Enter**.
+- Open Command Prompt (Windows) or Terminal (macOS/Linux).
+- Type **python --version** (or **python3 --version** on some systems) and press **Enter**.
 
 You should see the version number of Python, confirming that the installation was successful.
 
 **1.2 Install the pywin32 Library**
 
-Open Command Prompt or Terminal:
-
-On Windows: Press **Win + R**, type cmd or PowerShell, and press Enter to open Command Prompt.
-
-Open Terminal from your applications on macOS or Linux to begin the installation process.
+- Open Command Prompt or Terminal:
+- On Windows: Press **Win + R**, type cmd or PowerShell, and press Enter to open Command Prompt.
+- Open Terminal from your applications on macOS or Linux to begin the installation process.
 
 **Install pywin32**:
 
-Type the following command and press Enter:
+- Type the following command and press Enter:
 
 **pip install pywin32**
 
-This command downloads and installs pywin32, a library that lets Python control Microsoft Word.
+- This command downloads and installs pywin32, a library that lets Python control Microsoft Word.
 
 **Verify the Installation**:
 
