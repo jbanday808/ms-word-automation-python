@@ -61,9 +61,7 @@
 - Run the Script in the Command Prompt or Terminal:
 - Open Command Prompt (Windows) or Terminal (macOS/Linux).
 - Use the cd command to navigate to the directory where you saved your script.
-- Run the script by typing the following command and pressing Enter:
-
-**python ms_word_add_page.py**
+- Run the script by typing the following command and pressing Enter: **python ms_word_add_page.py**
 
 ![image](https://github.com/user-attachments/assets/569805e5-9fb9-45ed-891e-447ecce06eb2)
 - **Figure 2**: Running the script opens a blank Microsoft Word document for automation.
