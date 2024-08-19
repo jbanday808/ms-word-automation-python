@@ -13,11 +13,11 @@ Go to the official Python website and download the latest version for your opera
 Run the Python Installer:
 Double-click the installer file you downloaded.
 
-Important: During installation, check the "Add Python to PATH" box. This allows you to run Python from the command line.
+Important: Check the "**Add Python to PATH**" box during installation. Enabling this option allows you to run Python from the command line.
 
-Click "Install Now" and follow the instructions to complete the installation.
+Click "**Install Now**" and follow the instructions to complete the installation.
 
-Verify the Installation:
+**Verify the Installation**:
 
 Open Command Prompt (Windows) or Terminal (macOS/Linux).
 
