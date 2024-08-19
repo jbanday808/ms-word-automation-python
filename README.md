@@ -33,9 +33,7 @@ You should see the version number of Python, confirming that the installation wa
 
 **Install pywin32**:
 
-- Type the following command and press Enter:
-
-**pip install pywin32**
+- Type the following command and press Enter: **pip install pywin32**
 
 - This command downloads and installs pywin32, a library that lets Python control Microsoft Word.
 
