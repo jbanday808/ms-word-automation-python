@@ -48,31 +48,26 @@ If the installation is successful, you’ll see information about the package, i
 **Step 2**: **Write the Python Script**
 
 **2.1 Open Your Text Editor or Python IDE**
-Use a text editor like VSCode, Notepad++, or an IDE like PyCharm to write your Python script.
-
-Open your editor and create a new file.
+- Use a text editor like VSCode, Notepad++, or an IDE like PyCharm to write your Python script.
+- Open your editor and create a new file.
 
 **2.2 Write the Script**
 
 **2.3 Save the Script**
 
-Save the file with the name **ms_word_add_page.py**.
+- Save the file with the name **ms_word_add_page.py**.
+- Ensure the file ends with **.py**, which tells the system it’s a Python script.
 
 ![image](https://github.com/user-attachments/assets/df369d58-e868-438a-8dea-e5feb713b399)
 
 - **Figure 1**: The ms_word_add_page.py script in VS Code automates adding a page in Word using pywin32.
 
-Ensure the file ends with **.py**, which tells the system it’s a Python script.
-
 **2.4 Run the Script**
 
-Run the Script in the Command Prompt or Terminal:
-
-Open Command Prompt (Windows) or Terminal (macOS/Linux).
-
-Use the cd command to navigate to the directory where you saved your script.
-
-Run the script by typing the following command and pressing Enter:
+- Run the Script in the Command Prompt or Terminal:
+- Open Command Prompt (Windows) or Terminal (macOS/Linux).
+- Use the cd command to navigate to the directory where you saved your script.
+- Run the script by typing the following command and pressing Enter:
 
 **python ms_word_add_page.py**
 
@@ -92,17 +87,12 @@ Run the script by typing the following command and pressing Enter:
 
 **Explanation of the Script**:
 
-**Script Overview**: This script automates Microsoft Word to add a new page to an existing or new document. It uses the pywin32 library to control Word from Python.
-
-**Initialization**: The script starts by initializing the Word application. You can set the visible parameter to control whether the Word window is visible.
-
-**Opening/Creating a Document**: If you provide a file path, the script opens that document. If you don't, it creates a new document.
-
-**Adding a Page**: The script moves the cursor to the end of the document and inserts a new page by adding a page break.
-
-**Saving the Document**: The script saves the document either to a specified location (save_as) or uses the original file path. If you don't provide a file path, the script saves the document as NewDocument.docx.
-
-**Keeping Word Open**: The document and Word application will remain open, allowing you to continue working on the document without the script automatically closing it.
+- **Script Overview**: This script automates Microsoft Word to add a new page to an existing or new document. It uses the pywin32 library to control Word from Python.
+- **Initialization**: The script starts by initializing the Word application. You can set the visible parameter to control whether the Word window is visible.
+- **Opening/Creating a Document**: If you provide a file path, the script opens that document. If you don't, it creates a new document.
+- **Adding a Page**: The script moves the cursor to the end of the document and inserts a new page by adding a page break.
+- **Saving the Document**: The script saves the document either to a specified location (save_as) or uses the original file path. If you don't provide a file path, the script saves the document as NewDocument.docx.
+- **Keeping Word Open**: The document and Word application will remain open, allowing you to continue working on the document without the script automatically closing it.
 
 This guide explains how to automate Microsoft Word using Python and the pywin32 library. I designed the instructions to be simple and easy to follow, making them ideal for beginners or anyone looking to enhance their automation skills. 
 
