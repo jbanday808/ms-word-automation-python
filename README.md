@@ -100,7 +100,7 @@ def create_new_page_in_word(file_path=None, save_as=None, visible=True):
 
 # Example usage
 create_new_page_in_word()
-\
+\\\
 
 2.3 Save the Script
 Save the file with the name ms_word_add_page.py.
