@@ -58,6 +58,7 @@ Use a text editor like VSCode, Notepad++, or an IDE like PyCharm to write your P
 Open your editor and create a new file.
 
 2.2 Write the Script
+
 Copy and paste the following Python script into the new file:
  
 import win32com.client as win32
