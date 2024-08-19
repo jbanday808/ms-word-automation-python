@@ -6,12 +6,9 @@
 
 **Download Python**:
 
-Go to the official Python website and download the latest version for your operating system (Windows, macOS, or Linux).
-
-**Official Python Website**: https://www.python.org/downloads/
-
-Run the Python Installer:
-
+- Go to the official Python website and download the latest version for your operating system (Windows, macOS, or Linux).
+- **Official Python Website**: https://www.python.org/downloads/
+- Run the Python Installer:
 - Double-click the installer file you downloaded.
 
 **IMPORTANT**: Check the "**Add Python to PATH**" box during installation. Enabling this option allows you to run Python from the command line.
