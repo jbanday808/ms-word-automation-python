@@ -54,7 +54,7 @@
 
 ![image](https://github.com/user-attachments/assets/df369d58-e868-438a-8dea-e5feb713b399)
 
-- **Figure 1**: The ms_word_add_page.py script in VS Code automates adding a page in Word using pywin32.
+- **Figure 1**: The **ms_word_add_page.py** script in **VS Code** automates adding a page in Word using **pywin32**.
 
 **2.4 Run the Script**
 
