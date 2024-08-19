@@ -21,7 +21,7 @@ Click "**Install Now**" and follow the instructions to complete the installation
 
 Open Command Prompt (Windows) or Terminal (macOS/Linux).
 
-Type python --version (or python3 --version on some systems) and press Enter.
+Type **python --version** (or **python3 --version** on some systems) and press **Enter**.
 
 You should see the version number of Python, confirming that the installation was successful.
 
