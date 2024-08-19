@@ -103,7 +103,8 @@ create_new_page_in_word()
 
 ```python
 
-2.3 Save the Script
+**2.3 Save the Script**
+
 Save the file with the name ms_word_add_page.py.
 Ensure the file ends with .py, which tells the system it’s a Python script.
 Explanation of the Script
