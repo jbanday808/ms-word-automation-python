@@ -62,12 +62,37 @@ Open your editor and create a new file.
 
 Save the file with the name **ms_word_add_page.py**.
 
-![image](https://github.com/user-attachments/assets/0d669db8-b62e-4aa8-8ea4-6dbb2a6c7fa0)
+![image](https://github.com/user-attachments/assets/df369d58-e868-438a-8dea-e5feb713b399)
 
 - **Figure 1**: The ms_word_add_page.py script in VS Code automates adding a page in Word using pywin32.
 
-
 Ensure the file ends with **.py**, which tells the system it’s a Python script.
+
+**2.4 Run the Script**
+
+Run the Script in the Command Prompt or Terminal:
+
+Open Command Prompt (Windows) or Terminal (macOS/Linux).
+
+Use the cd command to navigate to the directory where you saved your script.
+
+Run the script by typing the following command and pressing Enter:
+
+**python ms_word_add_page.py**
+
+![image](https://github.com/user-attachments/assets/569805e5-9fb9-45ed-891e-447ecce06eb2)
+- **Figure 2**: Running the script opens a blank Microsoft Word document for automation.
+
+**Command**: **python ms_word_add_page.py**
+
+**Explanation of each component**:
+
+**python**: Executes the Python interpreter to run a Python script.
+
+**ms_word_add_page.py**: Specifies the script file that adds a new page to a Word document using pywin32.
+
+**Summary**: Runs the script that automates adding a new page to a Word document.
+
 
 **Explanation of the Script**:
 
