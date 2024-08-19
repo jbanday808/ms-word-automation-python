@@ -25,15 +25,15 @@ Type python --version (or python3 --version on some systems) and press Enter.
 
 You should see the version number of Python, confirming that the installation was successful.
 
-1.2 Install the pywin32 Library
+**1.2 Install the pywin32 Library**
 
 Open Command Prompt or Terminal:
 
-On Windows: Press Win + R, type cmd, and press Enter to open Command Prompt.
+On Windows: Press **Win + R**, type cmd or PowerShell, and press Enter to open Command Prompt.
 
 Open Terminal from your applications on macOS or Linux to begin the installation process.
 
-Install pywin32:
+**Install pywin32**:
 
 Type the following command and press Enter:
 
