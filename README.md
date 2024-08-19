@@ -49,23 +49,22 @@ Type the following command to confirm that the pywin32 installation is correct:
 
 If the installation is successful, you’ll see information about the package, including its version number and installation path on your system.
 
-Step 2: Write the Python Script
+**Step 2**: **Write the Python Script**
 
-2.1 Open Your Text Editor or Python IDE
-
+**2.1 Open Your Text Editor or Python IDE**
 Use a text editor like VSCode, Notepad++, or an IDE like PyCharm to write your Python script.
 
 Open your editor and create a new file.
 
 **2.2 Write the Script**
 
-2.3 Save the Script**
+**2.3 Save the Script**
 
 Save the file with the name **ms_word_add_page.py**.
 
 ![image](https://github.com/user-attachments/assets/0d669db8-b62e-4aa8-8ea4-6dbb2a6c7fa0)
 
-**Figure 1**: The ms_word_add_page.py script in VS Code automates adding a page in Word using pywin32.
+- **Figure 1**: The ms_word_add_page.py script in VS Code automates adding a page in Word using pywin32.
 
 
 Ensure the file ends with **.py**, which tells the system it’s a Python script.
