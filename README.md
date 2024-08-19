@@ -37,15 +37,15 @@ Open Terminal from your applications on macOS or Linux to begin the installation
 
 Type the following command and press Enter:
 
-pip install pywin32
+**pip install pywin32**
 
 This command downloads and installs pywin32, a library that lets Python control Microsoft Word.
 
-Verify the Installation:
+**Verify the Installation**:
 
 Type the following command to confirm that the pywin32 installation is correct:
 
-pip show pywin32
+**pip show pywin32**
 
 If the installation is successful, you’ll see information about the package, including its version number and installation path on your system.
 
@@ -57,12 +57,17 @@ Use a text editor like VSCode, Notepad++, or an IDE like PyCharm to write your P
 
 Open your editor and create a new file.
 
-2.2 Write the Script
+**2.2 Write the Script**
 
 2.3 Save the Script**
 
-Save the file with the name ms_word_add_page.py.
+Save the file with the name **ms_word_add_page.py**.
+
+![image](https://github.com/user-attachments/assets/0d669db8-b62e-4aa8-8ea4-6dbb2a6c7fa0)
+
+
 Ensure the file ends with .py, which tells the system it’s a Python script.
+
 Explanation of the Script
 
 Script Overview: This script automates Microsoft Word to add a new page to an existing or new document. It uses the pywin32 library to control Word from Python.
