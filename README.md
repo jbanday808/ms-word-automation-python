@@ -35,9 +35,7 @@
 
 **Verify the Installation**:
 
-- Type the following command to confirm that the pywin32 installation is correct:
-
-**pip show pywin32**
+- Type the following command to confirm that the pywin32 installation is correct: **pip show pywin32**
 
 - If the installation is successful, you’ll see information about the package, including its version number and installation path on your system.
 
