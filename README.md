@@ -108,11 +108,19 @@ def create_new_page_in_word(file_path=None, save_as=None, visible=True):
         doc.Range().Collapse(Direction=0)  # 0 for wdCollapseEnd
         doc.Range().InsertBreak(Type=7)  # 7 for wdPageBreak
 
-        # Add a numbered list item
+        # Insert numbered list
         rng = doc.Range()
-        rng.InsertAfter("1. ")
-        rng.Collapse(Direction=0)
-        rng.InsertAfter("Your numbered list item text here.\n")
+        number = 1
+        while True:
+            rng.InsertAfter(f"{number}. ")
+            rng.Collapse(Direction=0)
+            rng.InsertAfter("Your numbered list item text here.\n")
+            rng.Collapse(Direction=0)
+            number += 1
+            # Check if user wants to add more items
+            user_input = input("Press Enter to add another item or type 'exit' to finish: ")
+            if user_input.lower() == 'exit':
+                break
 
         # Apply numbering to the list
         rng.ListFormat.ApplyNumberDefault()
@@ -132,6 +140,7 @@ def create_new_page_in_word(file_path=None, save_as=None, visible=True):
 
 # Example usage
 create_new_page_in_word()
+
 
 
 
