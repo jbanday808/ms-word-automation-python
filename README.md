@@ -108,22 +108,26 @@ def create_new_page_in_word(file_path=None, save_as=None, visible=True):
         doc.Range().Collapse(Direction=0)  # 0 for wdCollapseEnd
         doc.Range().InsertBreak(Type=7)  # 7 for wdPageBreak
 
-        # Insert numbered list
-        rng = doc.Range()
-        number = 1
-        while True:
-            rng.InsertAfter(f"{number}. ")
-            rng.Collapse(Direction=0)
-            rng.InsertAfter("Your numbered list item text here.\n")
-            rng.Collapse(Direction=0)
-            number += 1
-            # Check if user wants to add more items
-            user_input = input("Press Enter to add another item or type 'exit' to finish: ")
-            if user_input.lower() == 'exit':
-                break
+        # Add a new paragraph and apply list formatting without manually inserting the number
+        rng = doc.Content
+        para = doc.Content.Paragraphs.Add(rng)
+        para.Range.Text = "First item text here"
+        
+        # Apply the list numbering format
+        para.Range.ListFormat.ApplyNumberDefault()
 
-        # Apply numbering to the list
-        rng.ListFormat.ApplyNumberDefault()
+        # Adjust paragraph indentation and tabs to match your setup
+        para.Format.LeftIndent = word.InchesToPoints(0.25)
+        para.Format.FirstLineIndent = word.InchesToPoints(-0.25)
+
+        # Explicitly set tab stop at 0.25 inches
+        para.TabStops.ClearAll()
+        para.TabStops.Add(Position=word.InchesToPoints(0.25), Alignment=0, Leader=0)
+
+        # Ensure the paragraph style is correctly set for numbering
+        para.Range.Style = word.ActiveDocument.Styles("List Number")
+
+        # The rest of the items should be handled automatically by Word as the user presses Enter
 
         # Determine the save path and ensure it's unique if needed
         save_path = save_as or file_path or "NewDocument.docx"
@@ -133,13 +137,14 @@ def create_new_page_in_word(file_path=None, save_as=None, visible=True):
 
         # Save the document
         doc.SaveAs(save_path)
-        print(f"New page added and document saved as: {save_path}")
+        print(f"Document saved as: {save_path}")
 
     except Exception as e:
         print(f"An error occurred: {e}")
 
 # Example usage
 create_new_page_in_word()
+
 
 
 
