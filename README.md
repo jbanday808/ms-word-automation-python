@@ -52,7 +52,7 @@
 - Save the file with the name **ms_word_add_page.py**.
 - Ensure the file ends with **.py**, which tells the system it’s a Python script.
 
-![image](https://github.com/user-attachments/assets/df369d58-e868-438a-8dea-e5feb713b399)
+![image](https://github.com/user-attachments/assets/426a9474-0224-4a26-9dd5-7ecae6eb90b6)
 
 - **Figure 1**: The **ms_word_add_page.py** script in **VS Code** automates adding a page in Word using **pywin32**.
 
@@ -93,42 +93,46 @@ This guide explains how to automate Microsoft Word using Python and the pywin32 
 ```python
 import win32com.client as win32
 import os
+import time
 
 def create_new_page_in_word(file_path=None, save_as=None, visible=True):
     try:
         # Initialize Word application
         word = win32.Dispatch('Word.Application')
-        word.Visible = visible  # Show or hide the Word window
+        word.Visible = visible
 
-        # Open an existing document or create a new one
-        if file_path and os.path.exists(file_path):
-            doc = word.Documents.Open(file_path)
-        else:
-            doc = word.Documents.Add()
-        
-        # Move the cursor to the end of the document
-        doc.Range().Collapse(Direction=0)  # 0 moves the cursor to the end
+        # Open or create a document
+        doc = word.Documents.Open(file_path) if file_path and os.path.exists(file_path) else word.Documents.Add()
 
-        # Insert a page break (a new page)
-        doc.Range().InsertBreak(Type=7)  # 7 inserts a new page break
+        # Move cursor to the end and insert a page break
+        doc.Range().Collapse(Direction=0)  # 0 for wdCollapseEnd
+        doc.Range().InsertBreak(Type=7)  # 7 for wdPageBreak
 
-        # Determine where to save the document
-        if save_as:
-            save_path = save_as
-        else:
-            save_path = file_path if file_path else "NewDocument.docx"
-        
+        # Add a numbered list item
+        rng = doc.Range()
+        rng.InsertAfter("1. ")
+        rng.Collapse(Direction=0)
+        rng.InsertAfter("Your numbered list item text here.\n")
+
+        # Apply numbering to the list
+        rng.ListFormat.ApplyNumberDefault()
+
+        # Determine the save path and ensure it's unique if needed
+        save_path = save_as or file_path or "NewDocument.docx"
+        if any(doc.Name == os.path.basename(save_path) for doc in word.Documents):
+            base, ext = os.path.splitext(save_path)
+            save_path = f"{base}_{int(time.time())}{ext}"
+
         # Save the document
         doc.SaveAs(save_path)
-
         print(f"New page added and document saved as: {save_path}")
 
     except Exception as e:
         print(f"An error occurred: {e}")
-    # The document and Word application will stay open after running the script
 
 # Example usage
 create_new_page_in_word()
+
 
 
 
