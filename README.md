@@ -63,7 +63,7 @@
 - Run the script by typing the following command and pressing Enter: **python ms_word_add_page.py**
 
 ![image](https://github.com/user-attachments/assets/04ee5f0f-6b6e-4047-95b1-f4de0c502cf3)
-- **Figure 2**: Running the script opens a blank Microsoft Word document for automation.
+- **Figure 2**: Shows a Word document with an automatically numbered list item, formatted using a Python script.
 
 **Command**: **python ms_word_add_page.py**
 
